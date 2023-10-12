@@ -120,3 +120,29 @@ real    0m33,272s
 user    0m31,952s
 sys     0m0,313s
 ```
+
+## n-body
+
+### Go 1.21.1
+
+```
+$ time ./build/n-body-go-1.21.1 50000000
+-0.169075164
+-0.169059907
+
+real    0m8,185s
+user    0m8,193s
+sys     0m0,013s
+```
+
+### TinyGo 0.30.0
+
+```
+$ time ./build/n-body-tinygo-0.30.0 50000000
+-0.169075164
+-0.169059907
+
+real    0m7,493s
+user    0m7,491s
+sys     0m0,000s
+```
