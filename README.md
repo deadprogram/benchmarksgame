@@ -5,7 +5,10 @@ See https://benchmarksgame-team.pages.debian.net/benchmarksgame/measurements/go.
 ## binarytrees
 
 ### Go 1.21.1
+
 ```
+-rwxrwxr-x 1 ron ron 1953150 oct 12 11:50 binarytrees-go-1.21.1
+
 $ time ./build/binarytrees-go-1.21.1 21
 stretch tree of depth 22         check: 8388607
 2097152  trees of depth 4        check: 65011712
@@ -25,7 +28,10 @@ sys     0m0,699s
 ```
 
 ### TinyGo 0.30.0
+
 ```
+-rwxrwxr-x 1 ron ron  739608 oct 12 11:34 binarytrees-tinygo-0.30.0
+
 $ time ./build/binarytrees-tinygo-0.30.0 21
 stretch tree of depth 22         check: 8388607
 2097152  trees of depth 4        check: 65011712
@@ -49,6 +55,8 @@ sys     0m0,144s
 ### Go 1.21.1
 
 ```
+-rwxrwxr-x 1 ron ron 1965126 oct 12 11:56 fasta-go-1.21.1
+
 $ time ./build/fasta-go-1.21.1 25000000
 
 ...
@@ -68,6 +76,8 @@ sys     0m6,288s
 ### TinyGo 0.30.0
 
 ```
+-rwxrwxr-x 1 ron ron  756368 oct 12 11:56 fasta-tinygo-0.30.0
+
 $ time ./build/fasta-tinygo-0.30.0 25000000
 
 ...
@@ -88,6 +98,8 @@ sys     0m6,649s
 ### Go 1.21.1
 
 ```
+-rwxrwxr-x 1 ron ron 2048432 oct 12 12:04 mandelbrot-go-1.21.1
+
 $ time ./build/mandelbrot-go-1.21.1 16000
 
 ...
@@ -107,6 +119,8 @@ sys     0m0,381s
 ### TinyGo 0.30.0
 
 ```
+-rwxrwxr-x 1 ron ron  764800 oct 12 12:03 mandelbrot-tinygo-0.30.0
+
 time ./build/mandelbrot-tinygo-0.30.0 16000
 
 ...
@@ -126,6 +140,8 @@ sys     0m0,313s
 ### Go 1.21.1
 
 ```
+-rwxrwxr-x 1 ron ron 1958599 oct 12 12:48 n-body-go-1.21.1
+
 $ time ./build/n-body-go-1.21.1 50000000
 -0.169075164
 -0.169059907
@@ -138,6 +154,8 @@ sys     0m0,013s
 ### TinyGo 0.30.0
 
 ```
+-rwxrwxr-x 1 ron ron  745352 oct 12 12:48 n-body-tinygo-0.30.0
+
 $ time ./build/n-body-tinygo-0.30.0 50000000
 -0.169075164
 -0.169059907
@@ -145,4 +163,42 @@ $ time ./build/n-body-tinygo-0.30.0 50000000
 real    0m7,493s
 user    0m7,491s
 sys     0m0,000s
+```
+
+## simple
+
+### Go 1.21.1
+
+```
+-rwxrwxr-x 1 ron ron 1842485 oct 12 13:06 simple-go-1.21.1
+
+$ time ./build/simple-go-1.21.1 16000
+
+...
+P@@@@@   @O`D  ? 
+                 0" @??@@@   F
+                              >?@` 
+@ p>?`_I"     !@bHC _HOG@ @
+                          @
+real    0m42,630s
+user    0m42,351s
+sys     0m0,377s
+```
+
+### TinyGo 0.30.0
+
+```
+-rwxrwxr-x 1 ron ron  676248 oct 12 13:05 simple-tinygo-0.30.0
+
+time ./build/simple-tinygo-0.30.0 16000
+
+...
+P@@@@@   @O`D  ? 
+                 0" @??@@@   F
+                              >?@` 
+@ p>?`_I"     !@bHC _HOG@ @
+                          @
+real    0m44,830s
+user    0m44,568s
+sys     0m0,245s
 ```
