@@ -202,3 +202,31 @@ real    0m44,830s
 user    0m44,568s
 sys     0m0,245s
 ```
+
+## spectral-norm
+
+### Go 1.21.1
+
+```
+-rwxrwxr-x 1 ron ron 1953403 oct 12 13:20 spectral-norm-go.1.21.1
+
+$ time ./build/spectral-norm-go.1.21.1 5500
+1.274224153
+
+real    0m5,376s
+user    0m5,369s
+sys     0m0,020s
+```
+
+### TinyGo 0.30.0
+
+```
+-rwxrwxr-x 1 ron ron  742560 oct 12 13:20 spectral-norm-tinygo-0.30.0
+
+$ time ./build/spectral-norm-tinygo-0.30.0 5500
+1.274224153
+
+real    0m17,875s
+user    0m17,871s
+sys     0m0,001s
+```
